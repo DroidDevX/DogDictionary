@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Detailed fragment dimensions-->
+
+    <string name="textViewHeaderString">"Portrait"</string>
+    <dimen name="textViewHeaderPadding">8dp</dimen>
+    <dimen name="textViewHeaderTextSize">18sp</dimen>
+    <dimen name="standardScrollViewSize">4dp</dimen>
+
+    <dimen name="textViewContainerLayout_MarginTop">8dp</dimen>
+    <dimen name="textViewContainer_MarginBottom">8dp</dimen>
+    <dimen name="textViewContainer_MarginLeft">8dp</dimen>
+    <dimen name="textViewContainer_MarginRight">8dp</dimen>
+
+    <dimen name="textViewLinearLayout_MarginTop">8dp</dimen>
+    <dimen name="textViewTextSize">16sp</dimen>
+    <dimen name="textViewTextSizeSecondary">14sp</dimen>
+
+    <!--Masterlist fragment dimensions -->
+    <dimen name="recylerViewItemPadding">8sp</dimen>
+    <dimen name="recylerViewItemTextSize">16sp</dimen>
+    <string name="layout_mode">Portrait</string>
+
+</resources>

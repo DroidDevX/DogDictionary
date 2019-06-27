@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/detailFragRoot"
+    >
+
+    <TextView
+        android:id="@+id/textView_dogbreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/textViewHeaderPadding"
+        android:textSize="@dimen/textViewHeaderTextSize"
+        android:text="Loading..."
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        tools:text="@string/textViewHeaderString" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="@dimen/standardScrollViewSize"
+        android:scrollbarThumbVertical="@drawable/scroll_bar"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/dogImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/textViewLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                android:layout_marginBottom="@dimen/textViewContainer_MarginBottom"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/textViewContainer_MarginLeft"
+                android:paddingRight="@dimen/textViewContainer_MarginRight"
+                android:paddingBottom="@dimen/textViewContainer_MarginBottom">
+
+                <TextView
+                    android:id="@+id/swipeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:text="Swipe picture to view next"
+                    android:textAlignment="center"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold|italic"
+                    tools:text="Swipe picture to view next"
+                    tools:textSize="@dimen/textViewTextSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/weightLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Weight: "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/textViewTextSize" />
+
+                    <TextView
+                        android:id="@+id/textview_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textViewTextSizeSecondary"
+                        tools:text="Example"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/heightLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Height:"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/textViewTextSize" />
+
+                    <TextView
+                        android:id="@+id/textview_height"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textViewTextSizeSecondary"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Breed Group: "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/textViewTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_bredGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textViewTextSizeSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bred For: "
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/textViewTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_bredFor"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textViewTextSizeSecondary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/temperamentLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Temperament :"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/textViewTextSize" />
+
+                    <TextView
+                        android:id="@+id/textview_temperament"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textViewTextSizeSecondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textViewLinearLayout_MarginTop"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lifespan :"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/textViewTextSize" />
+
+                    <TextView
+                        android:id="@+id/textView_lifespan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/textViewTextSizeSecondary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

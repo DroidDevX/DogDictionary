@@ -1,125 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+    <FrameLayout
+        android:id="@+id/FragmentHolder"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-
-        android:background="@color/colorPrimary"
-        android:paddingTop="4dp"
-        android:text="Doganator"
-        android:textAlignment="center"
-        android:textColor="@color/colorWhite"
-        android:textSize="28sp"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="0dp">
-
-
-        <androidx.viewpager.widget.ViewPager
-            android:padding="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:minHeight="300dp"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_height="0dp"
-            tools:tooltipText="Put"/>
-
-        <TextView
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="32dp"
-            android:textAlignment="center"
-            android:textStyle="bold|italic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:text="Swipe picture to view next"
-            tools:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:textAlignment="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="22sp"
-            tools:text="Dog name" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            tools:text="Insert dog name." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:textAlignment="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="22sp"
-            tools:text="Breed" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            tools:text="Insert Breed." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:textAlignment="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="22sp"
-            tools:text="Description" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            tools:text="Insert Description." />
-
-
-    </LinearLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton_add"
-        android:layout_width="60dp"
-        android:layout_height="58dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/ic_add_circle_black_24dp"
-        android:clickable="true"
-        android:onClick="onFABclicked"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
+        android:layout_height="match_parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

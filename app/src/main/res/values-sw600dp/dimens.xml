@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Detailed fragment dimensions-->
+    <string name="textViewHeaderString">Landscape or tablet </string>
+    <dimen name="textViewHeaderPadding">12dp</dimen>
+    <dimen name="textViewHeaderTextSize">26sp</dimen>
+    <dimen name="standardScrollViewSize">6dp</dimen>
+
+    <dimen name="textViewContainerLayout_MarginTop">18dp</dimen>
+    <dimen name="textViewContainer_MarginBottom">18dp</dimen>
+    <dimen name="textViewContainer_MarginLeft">12dp</dimen>
+    <dimen name="textViewContainer_MarginRight">12dp</dimen>
+
+    <dimen name="textViewLinearLayout_MarginTop">16dp</dimen>
+    <dimen name="textViewTextSize">22sp</dimen>
+    <dimen name="textViewTextSizeSecondary">18sp</dimen>
+
+    <!--Masterlist fragment dimensions -->
+    <dimen name="recylerViewItemPadding">10sp</dimen>
+    <dimen name="recylerViewItemTextSize">22sp</dimen>
+    <string name="layout_mode">Landscape</string>
+
+</resources>

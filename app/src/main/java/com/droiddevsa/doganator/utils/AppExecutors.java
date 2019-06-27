@@ -1,4 +1,4 @@
-package com.droiddevsa.doganator.Utils;
+package com.droiddevsa.doganator.utils;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -9,6 +9,7 @@ import java.util.concurrent.Executors;
 public class AppExecutors {
     private final Executor dbIO;
     private final Executor uiThread;
+    private final Executor networkIO;
     private static AppExecutors sInstance;
     private static final Object LOCK = new Object();
 
@@ -24,17 +25,27 @@ public class AppExecutors {
 
     public Executor dbIO() {return dbIO;}
 
-    private AppExecutors(Executor dbIO,Executor uiThread){
+    public Executor mainUiThread(){return mainUiThread();}
+
+    public Executor networkIO(){return networkIO;}
+
+    private AppExecutors(Executor dbIO,Executor networkIO,Executor uiThread){
         this.dbIO = dbIO;
         this.uiThread = uiThread;
+        this.networkIO = networkIO;
+
     }
 
     public static AppExecutors getInstance(){
+
         if(sInstance ==null)
             synchronized (LOCK){
-                sInstance = new AppExecutors(Executors.newSingleThreadExecutor(),new MainThreadExceutor());
+                sInstance = new AppExecutors(Executors.newSingleThreadExecutor(),
+                            Executors.newFixedThreadPool(3)
+                           ,new MainThreadExceutor());
         }
             return sInstance;
     }
+
 
 }
